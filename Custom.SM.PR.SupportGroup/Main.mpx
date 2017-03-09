@@ -1,0 +1,38 @@
+﻿<ManagementPackFragment SchemaVersion="SM2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+		<!-- Add the support group field to the problem class by using an extension -->
+        <ClassType ID="VDW.SM.PR.SupportGroupExtension" Abstract="false" Accessibility="Public" Hosted="false" Singleton="false" Base="SWPL!System.WorkItem.Problem" Extension="true">
+          <Property ID="SupportGroup" EnumType="VDW.SM.PR.SupportGroupEnum" Type="enum" />
+        </ClassType>
+        
+      </ClassTypes>
+      <EnumerationTypes>
+		<!-- The actual list is defined here -->
+        <EnumerationValue ID="VDW.SM.PR.SupportGroupEnum" Accessibility="Public" />
+      </EnumerationTypes>
+    </EntityTypes>
+    
+  </TypeDefinitions>
+  <Categories>
+	<!-- These categories are needed to make the list show up in our console (authoring / lists) -->
+    <Category ID="VDW.SM.PR.SupportGroupEnumCategory1" Target="VDW.SM.PR.SupportGroupEnum" Value="MESUA!Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring.EnumerationViewTasks" />
+    <Category ID="VDW.SM.PR.SupportGroupEnumCategory2" Target="VDW.SM.PR.SupportGroupEnum" Value="System!VisibleToUser" />
+    <Category ID="VDW.SM.PR.SupportGroupManagementPackCategory" Value="MESUC!Microsoft.SystemCenter.ManagementPack">
+      <ManagementPackName>VDW.SM.PR.SupportGroup</ManagementPackName>
+      <ManagementPackVersion>1.0.0.0</ManagementPackVersion>
+      <ManagementPackPublicKeyToken>6bd7dd9c936b3b55</ManagementPackPublicKeyToken>
+    </Category>
+  </Categories>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+	  <!-- User-Friendly naming of our new property -->
+        <DisplayString ElementID="VDW.SM.PR.SupportGroupEnum">
+          <Name>Problem Support Group</Name>
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

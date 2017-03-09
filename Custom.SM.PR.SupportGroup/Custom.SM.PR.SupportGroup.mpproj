@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{9e25be87-76d0-4c9f-9ba1-9810fef923fe}</ProjectGuid>
+    <RootNamespace>VDW.SM.PR.SupportGroup</RootNamespace>
+    <Name>VDW.SM.PR.SupportGroup</Name>
+    <ManagementPackName>VDW.SM.PR.SupportGroup</ManagementPackName>
+    <Version>1.0.0.0</Version>
+    <MpFrameworkVersion>v7.0.2</MpFrameworkVersion>
+    <MpFrameworkProfile>SM</MpFrameworkProfile>
+    <ProductVersion>1.1.0.0</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <GenerateSealed>True</GenerateSealed>
+    <Company>MyCompany</Company>
+    <Copyright>Copyright (c) MyCompany. All rights reserved.</Copyright>
+    <DelaySigning>False</DelaySigning>
+    <AssemblyOriginatorKeyFile>D:\inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.SupportGroup\_references\vandewiele.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <DelaySigning>false</DelaySigning>
+    <Company>MyCompany</Company>
+    <Copyright>Copyright (c) MyCompany. All rights reserved.</Copyright>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <ManagementPackReference Include="Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring">
+      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.SupportGroup\_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring.mp</HintPath>
+      <Alias>MESUA</Alias>
+      <MinVersion>7.5.7487.0</MinVersion>
+    </ManagementPackReference>
+    <ManagementPackReference Include="Microsoft.EnterpriseManagement.ServiceManager.UI.Console">
+      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.SupportGroup\_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Console.mp</HintPath>
+      <Alias>MESUC</Alias>
+      <MinVersion>7.5.7487.0</MinVersion>
+    </ManagementPackReference>
+    <ManagementPackReference Include="Microsoft.SystemCenter.Library">
+      <Alias>SC</Alias>
+      <PackageToBundle>false</PackageToBundle>
+    </ManagementPackReference>
+    <ManagementPackReference Include="ServiceManager.ProblemManagement.Library">
+      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.SupportGroup\_references\ServiceManager.ProblemManagement.Library.mp</HintPath>
+      <Alias>SPL</Alias>
+      <MinVersion>7.5.7487.0</MinVersion>
+      <PackageToBundle>False</PackageToBundle>
+    </ManagementPackReference>
+    <ManagementPackReference Include="System.Library">
+      <Alias>System</Alias>
+      <PackageToBundle>false</PackageToBundle>
+    </ManagementPackReference>
+    <ManagementPackReference Include="System.WorkItem.Library">
+      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.SupportGroup\_references\System.WorkItem.Library.mp</HintPath>
+      <Alias>SWL</Alias>
+      <MinVersion>7.5.7487.0</MinVersion>
+    </ManagementPackReference>
+    <ManagementPackReference Include="System.WorkItem.Problem.Library">
+      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.SupportGroup\_references\System.WorkItem.Problem.Library.mp</HintPath>
+      <Alias>SWPL</Alias>
+      <MinVersion>7.5.7487.0</MinVersion>
+    </ManagementPackReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="_references" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring.mp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Console.mp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_references\ServiceManager.ProblemManagement.Library.mp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_references\System.WorkItem.Library.mp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_references\System.WorkItem.Problem.Library.mp">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="_references\vandewiele.snk">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.mpx">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VSAC\Microsoft.SystemCenter.OperationsManager.targets" />
+</Project>
