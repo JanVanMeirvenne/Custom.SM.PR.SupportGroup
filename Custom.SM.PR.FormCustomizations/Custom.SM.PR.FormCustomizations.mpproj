@@ -3,9 +3,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <ProjectGuid>{1a7e479e-5c4c-4d11-a089-a1c904b8ab47}</ProjectGuid>
-    <RootNamespace>VDW.SM.PR.FormCustomizations</RootNamespace>
-    <Name>VDW.SM.PR.FormCustomizations</Name>
-    <ManagementPackName>VDW.SM.PR.FormCustomizations</ManagementPackName>
+    <RootNamespace>Custom.SM.PR.FormCustomizations</RootNamespace>
+    <Name>Custom.SM.PR.FormCustomizations</Name>
+    <ManagementPackName>Custom.SM.PR.FormCustomizations</ManagementPackName>
     <Version>1.0.0.0</Version>
     <MpFrameworkVersion>v7.0.2</MpFrameworkVersion>
     <MpFrameworkProfile>SM</MpFrameworkProfile>
@@ -18,7 +18,7 @@
     <Company>MyCompany</Company>
     <Copyright>Copyright (c) MyCompany. All rights reserved.</Copyright>
     <DelaySigning>False</DelaySigning>
-    <AssemblyOriginatorKeyFile>D:\inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.FormCustomizations\_references\vandewiele.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>c:\temp\custom.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -31,12 +31,12 @@
   </PropertyGroup>
   <ItemGroup>
     <ManagementPackReference Include="Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring">
-      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.FormCustomizations\_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring.mp</HintPath>
+      <HintPath>D:\OneDrive - Inovativ\Projects\Custom\SCSM\dev2\Custom.SM.PR.SupportGroup\Custom.SM.PR.FormCustomizations\_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Authoring.mp</HintPath>
       <Alias>MESUA</Alias>
       <MinVersion>7.5.7487.0</MinVersion>
     </ManagementPackReference>
     <ManagementPackReference Include="Microsoft.EnterpriseManagement.ServiceManager.UI.Console">
-      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.FormCustomizations\_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Console.mp</HintPath>
+      <HintPath>D:\OneDrive - Inovativ\Projects\Custom\SCSM\dev2\Custom.SM.PR.SupportGroup\Custom.SM.PR.FormCustomizations\_references\Microsoft.EnterpriseManagement.ServiceManager.UI.Console.mp</HintPath>
       <Alias>MESUC</Alias>
       <MinVersion>7.5.7487.0</MinVersion>
     </ManagementPackReference>
@@ -45,7 +45,7 @@
       <PackageToBundle>False</PackageToBundle>
     </ManagementPackReference>
     <ManagementPackReference Include="ServiceManager.ProblemManagement.Library">
-      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.FormCustomizations\_references\ServiceManager.ProblemManagement.Library.mp</HintPath>
+      <HintPath>D:\OneDrive - Inovativ\Projects\Custom\SCSM\dev2\Custom.SM.PR.SupportGroup\Custom.SM.PR.FormCustomizations\_references\ServiceManager.ProblemManagement.Library.mp</HintPath>
       <Alias>SPL</Alias>
       <MinVersion>7.5.7487.0</MinVersion>
       <PackageToBundle>False</PackageToBundle>
@@ -55,7 +55,7 @@
       <PackageToBundle>False</PackageToBundle>
     </ManagementPackReference>
     <ManagementPackReference Include="System.WorkItem.Problem.Library">
-      <HintPath>D:\OneDrive - Inovativ\Projects\VDW\SCSM\dev2\VDW.SM.PR.SupportGroup\VDW.SM.PR.FormCustomizations\_references\System.WorkItem.Problem.Library.mp</HintPath>
+      <HintPath>D:\OneDrive - Inovativ\Projects\Custom\SCSM\dev2\Custom.SM.PR.SupportGroup\Custom.SM.PR.FormCustomizations\_references\System.WorkItem.Problem.Library.mp</HintPath>
       <Alias>SWPL</Alias>
       <MinVersion>7.5.7487.0</MinVersion>
     </ManagementPackReference>
@@ -86,14 +86,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VDW.SM.PR.SupportGroup\VDW.SM.PR.SupportGroup.mpproj">
-      <Name>VDW.SM.PR.SupportGroup</Name>
+    <ProjectReference Include="..\Custom.SM.PR.SupportGroup\Custom.SM.PR.SupportGroup.mpproj">
+      <Name>Custom.SM.PR.SupportGroup</Name>
       <Project>{9e25be87-76d0-4c9f-9ba1-9810fef923fe}</Project>
       <Private>True</Private>
       <Alias>VSPS</Alias>
     </ProjectReference>
-    <ProjectReference Include="..\VDW.SM.PR.UserControlOverride\VDW.SM.PR.UserControlOverride.csproj">
-      <Name>VDW.SM.PR.UserControlOverride</Name>
+    <ProjectReference Include="..\Custom.SM.PR.UserControlOverride\Custom.SM.PR.UserControlOverride.csproj">
+      <Name>Custom.SM.PR.UserControlOverride</Name>
       <Project>{c2ef3215-bc1e-4941-a25c-14a2d486211d}</Project>
       <Private>True</Private>
       <PackageToBundle>True</PackageToBundle>

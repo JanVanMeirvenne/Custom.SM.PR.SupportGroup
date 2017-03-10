@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VDW.SM.PR.UserControlOverride.Properties
+namespace Custom.SM.PR.UserControlOverride.Properties
 {
     
     

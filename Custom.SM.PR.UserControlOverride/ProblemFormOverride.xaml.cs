@@ -19,7 +19,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.EnterpriseManagement.UI.DataModel;
 
-namespace VDW.SM.PR.UserControlOverride
+namespace Custom.SM.PR.UserControlOverride
 {
     /// <summary>
     /// Interaction logic for UserControl1.xaml

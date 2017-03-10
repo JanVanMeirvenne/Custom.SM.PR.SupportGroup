@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VDW.SM.PR.UserControlOverride.Properties {
+namespace Custom.SM.PR.UserControlOverride.Properties {
     
     
     /// <summary>
@@ -38,7 +38,7 @@ namespace VDW.SM.PR.UserControlOverride.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("VDW.SM.PR.UserControlOverride.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Custom.SM.PR.UserControlOverride.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
